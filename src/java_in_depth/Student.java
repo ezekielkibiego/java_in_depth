@@ -65,15 +65,15 @@ public class Student {
 		
 		System.out.println("   ");
 		
-		Student student3 = new Student();
-		student3.id = 1002;
-		student3.name = "Anita";
-		student3.gender = "female";
-		student3.age = 24;
-		student3.phone = 223_456_8888L;
-		student3.gpa = 4.0;
-		student3.degree = 'M';
-		student3.international = true;
-		student3.compute();
+		Student s3 = new Student();
+		s3.id = 1002;
+		s3.name = "Anita";
+		s3.gender = "female";
+		s3.age = 24;
+		s3.phone = 223_456_8888L;
+		s3.gpa = 4.0;
+		s3.degree = 'M';
+		s3.international = true;
+		s3.compute();
 	}
 }
