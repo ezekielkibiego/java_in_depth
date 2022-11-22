@@ -14,6 +14,18 @@ public class Student {
 	boolean international;
 	double tuitionFees = 20000.0, internationalFees = 3000.0;
 	
+	Student(int newId, String newName, String newGender, int newAge, long newPhone, double newGpa, char newDegree, boolean isInternational){
+		id = newId;
+		name = newName;
+		gender = newGender;
+		age = newAge;
+		phone = newPhone;
+		gpa = newGpa;
+		degree = newDegree;
+		international = isInternational;
+		
+	}
+	
 //	long minValue = Long.MIN_VALUE;
 //	long maxValue = Long.MAX_VALUE;
 	
@@ -39,41 +51,19 @@ public class Student {
 
 	public static void main(String[] args) {
 	
-		Student s1 = new Student();
-		s1.id = 10001;
-		s1.name = "Ezekiel";
-		s1.gender = "male";
-		s1.age = 21;
-		s1.phone = 722_991_833; // java >7 --readability
-		s1.degree = 'B';
-		s1.gpa = 4.0;
-		s1.international = false;
+		Student s1 = new Student(1000, "Ezekiel", "male", 21, 722_991_833L, 4.0, 'B', false  );
+		
 		s1.compute();
 		
 		System.out.println("   ");
 		
-		Student s2 = new Student();
-		s2.id = 10001;
-		s2.name = "Mary";
-		s2.gender = "female";
-		s2.age = 20;
-		s2.phone = 722_991_222; // java >7 --readability
-		s2.degree = 'B';
-		s2.gpa = 4.2;
-		s2.international = true;
+		Student s2 = new Student(1001, "Mary", "female", 25, 722_991_222L, 4.2, 'M', true);
 		s2.compute();
 		
 		System.out.println("   ");
 		
-		Student s3 = new Student();
-		s3.id = 1002;
-		s3.name = "Anita";
-		s3.gender = "female";
-		s3.age = 24;
-		s3.phone = 223_456_8888L;
-		s3.gpa = 4.0;
-		s3.degree = 'M';
-		s3.international = true;
+		Student s3 = new Student(1003, "Anita", "female", 24, 722_991_111L, 3.9, 'M', true);
+		
 		s3.compute();
 	}
 }
